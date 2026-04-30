@@ -17,7 +17,6 @@ class CalcController {
     this._init();
   }
 
-  //Centralizando todas as inicializações no Init
   _init() {
     this.initialize();
     this.initButtonsEvents();
@@ -151,7 +150,6 @@ class CalcController {
 
   getResult() {
     try {
-      //Remover o Eval para utilização de function
       return Function(`'use strict'; return (${this._operation.join("")})`)();
     } catch (e) {
       setTimeout(() => {
@@ -160,22 +158,27 @@ class CalcController {
     }
   }
 
-  // ------------------------------------------------------------
-
    _clearHistory() {
-    this._clear = document.querySelector("#limpar");
-    this._clear.addEventListener("click", () => {
+    this._clearEl = document.querySelector("#limpar");
+    this._clearEl.addEventListener("click", () => {
+      console.log('To aqui');
       this._history = [];
+      const historyEl = document.querySelector("#historico");
+      const ul = historyEl.querySelector('ul');
+      historyEl.removeChild(ul);
+      
     });
   }
 
   _renderHistory() {
-    const historyEl = document.querySelector("#history");
-    //Adicionar os valores do array history no elemento do HTML
-    
+    const historico = document.querySelector('#lista-historico');
+     historico.innerHTML = '';
+     this._history.forEach( hs =>{
+      const li = document.createElement('li');
+      li.textContent = hs.expression + ' = ' + hs.result ;
+      historico.appendChild(li);
+     })
   }
-
-  //------------------------------------------------------------------------
 
   calc() {
     let last = "";
