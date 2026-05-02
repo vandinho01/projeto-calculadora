@@ -28,7 +28,7 @@ Calculadora desenvolvida como exemplo prático do Curso Completo de JavaScript n
 | Arquivo/Diretório | Descrição |
 | :--- | :--- |
 | `index.html` | Arquivo principal contendo a marcação HTML, estilos CSS embutidos e o desenho vetorial da calculadora. |
-| `digital-7.ttf` | [cite_start]Arquivo de fonte da família Digital-7[cite: 192]. [cite_start]Usado para renderizar os números no visor[cite: 187]. |
+| `digital-7.ttf` | Arquivo de fonte da família Digital-7. Usado para renderizar os números no visor. |
 | `click.mp3` | Arquivo de áudio acionado pelos eventos de clique na calculadora. |
 | `scripts/` | Diretório que armazena os arquivos JavaScript que controlam as regras de negócio (`calcController.js`) e a inicialização (`calculator.js`). |
 
