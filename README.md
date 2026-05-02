@@ -9,7 +9,7 @@ Calculadora desenvolvida como exemplo prático do Curso Completo de JavaScript n
 ## 📌 Funcionalidades
 
 * **Interface Realista e Vetorial:** O design da calculadora foi inteiramente construído utilizando SVG (Scalable Vector Graphics), garantindo que ela não perca qualidade em nenhuma resolução e possua efeitos de sombra (`drop-shadow`) para profundidade.
-* [cite_start]**Display Autêntico:** Utiliza a fonte customizada `Digital-7` (criada por Sizenko Alexander [cite: 185, 187][cite_start]) para imitar fielmente os displays de cristal líquido (LCD)[cite: 183].
+* **Display Autêntico:** Utiliza a fonte customizada `Digital-7` para imitar fielmente os displays de cristal líquido.
 * **Histórico de Cálculos:** Uma seção dedicada e interativa que registra as expressões matemáticas e seus respectivos resultados. Permite visualizar operações passadas e possui a funcionalidade de "Limpar".
 * **Feedback Sonoro:** Integração com arquivo de áudio (`click.mp3`) para reproduzir o som de clique das teclas, aprimorando a experiência do usuário.
 
@@ -43,6 +43,3 @@ Calculadora desenvolvida como exemplo prático do Curso Completo de JavaScript n
 
 ---
 
-## 📸 Prévia do Projeto
-
-![Calculadora](https://firebasestorage.googleapis.com/v0/b/hcode-com-br.appspot.com/o/calculadora-hcode.jpg?alt=media&token=5406aa3f-b965-401c-9b4e-654609c78b33)
